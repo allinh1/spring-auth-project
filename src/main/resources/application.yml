@@ -1,4 +1,3 @@
-
 server:
   error:
     include-message: always
@@ -6,9 +5,9 @@ server:
 
 spring:
   datasource:
-    password:
+    password: 1234
     url: jdbc:postgresql://localhost:5432/registration
-    username:
+    username: postgres
   jpa:
     hibernate:
       ddl-auto: create-drop
@@ -21,8 +20,8 @@ spring:
   mail:
     host: localhost
     port: 1025
-    username: postgres
-    password: 1234
+    username: hello
+    password: hello
 
     properties:
       mail:
@@ -35,3 +34,38 @@ spring:
           connectiontimeout: 5000
           timeout: 3000
           writetimeout: 5000
+
+#spring.datasource.url=jdbc:postgresql://localhost:5432/registration
+#spring.datasource.username=postgres
+#spring.datasource.password=1234
+
+## Server Properties
+#  server.port= 8080
+#  server.compression.enabled=true
+#
+#  ## Spring DATASOURCE (DataSourceAutoConfiguration & DataSourceProperties)
+#  spring.datasource.url= jdbc:mysql://localhost:3306/mothdx
+#  spring.datasource.username= root
+#  spring.datasource.password= MyPass
+#
+#
+#  ## Hibernate Properties
+#  # The SQL dialect makes Hibernate generate better SQL for the chosen database
+#  spring.jpa.properties.hibernate.dialect = org.hibernate.dialect.MySQL5InnoDBDialect
+#  spring.jpa.hibernate.ddl-auto = update
+#
+#  ## Hibernate Logging
+#  logging.level.org.hibernate.SQL= DEBUG
+#
+#  # Initialize the datasource with available DDL and DML scripts
+#  spring.datasource.initialization-mode=always
+#
+#  ## Jackson Properties
+#  spring.jackson.serialization.WRITE_DATES_AS_TIMESTAMPS= false
+#  spring.jackson.time-zone= UTC
+#
+#  ## App Properties
+#  app.jwtSecret= JWTSuperSecretKey
+#  app.jwtExpirationInMs = 604800000
+## Spring Profiles
+# spring.profiles.active=prod
