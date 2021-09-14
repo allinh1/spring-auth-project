@@ -6,8 +6,7 @@ import org.springframework.stereotype.Service;
 import java.util.function.Predicate;
 
 @Service
-@AllArgsConstructor
-public class EmailVaildator implements Predicate<String> {
+public class     EmailVaildator implements Predicate<String> {
 
     private EmailVaildator emailVaildator;
 
