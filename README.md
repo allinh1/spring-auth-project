@@ -2,11 +2,11 @@
 
 User Login, Auth, Registration + Email Verification
 
-Java
-DB - Postgres 
-Bootstrap -Spring Initializr
-SpringBoot
-Postman
-MailDev
+- Java
+- DB - Postgres 
+- Bootstrap -Spring Initializr
+- SpringBoot
+- Postman
+- MailDev
 
 @Amigoscode 
