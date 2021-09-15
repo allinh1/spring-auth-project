@@ -7,20 +7,18 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping(path = "api/v1/registration")
 @AllArgsConstructor
 
-
 public class RegistrationController {
 
     private final RegistrationService registrationService;
-
-    // double check with http://localhost:8080/hello .
 
     @PostMapping
     public String register(@RequestBody RegistrationRequest request) {
         return registrationService.register(request);
     }
 
-    @GetMapping(path="confirm")
+    @GetMapping(path = "confirm")
     public String confirm(@RequestParam("token") String token) {
         return registrationService.confirmToken(token);
     }
+
 }
