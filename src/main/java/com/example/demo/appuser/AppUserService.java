@@ -3,6 +3,7 @@ package com.example.demo.appuser;
 import com.example.demo.registration.token.ConfirmationToken;
 import com.example.demo.registration.token.ConfirmationTokenService;
 import lombok.AllArgsConstructor;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
@@ -14,6 +15,7 @@ import java.util.UUID;
 
 @Service
 @AllArgsConstructor
+
 public class AppUserService implements UserDetailsService {
 
     private final static String USER_NOT_FOUND_MSG =
@@ -64,7 +66,7 @@ public class AppUserService implements UserDetailsService {
         return token;
     }
 
-//    public int enableAppUser(String email) {
-//        return appUserRepository.enableAppUser(email);
-//    }
+    public int enableAppUser(String email) {
+        return appUserRepository.enableAppUser(email);
+    }
 }
